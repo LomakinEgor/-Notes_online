@@ -17,3 +17,7 @@
 			</ul>
 		</div>
 </footer>
+
+<?php 
+	R::close(); 
+?>
