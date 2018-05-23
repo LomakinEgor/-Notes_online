@@ -1,0 +1,4 @@
+header ul li:nth-child(1) a {
+	background-image: linear-gradient(to bottom, #ffc2a5 0%, 
+#fb874f 50%, #ffc2a5 100% );
+}

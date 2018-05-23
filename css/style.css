@@ -1,0 +1,283 @@
+/* Geniral CSS */
+
+* {
+	box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+	background: #fff;
+	background-image: url("../images/bg.png");
+}
+
+a:hover {
+	color: #fb874f;
+	 transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -ms-transition: all.5s ease;
+}
+
+.wrapper {
+	width: 1000px;	
+	margin: 0 auto;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display:table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/*	Header */
+
+header{
+	width: 100%;
+	min-width: 950px;
+	height: 130px;
+	margin-bottom: 10px;
+}
+
+
+header .logo {
+	float: left;
+	margin: 10px 0px 0px 10px; /*top right bottom left*/
+	height: 110px;
+	width: 113px;
+	background-image: url("../images/logo.png");
+	 transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -ms-transition: all.5s ease;
+    border-radius: 60px;
+}
+
+header .logo a {
+	display: block;
+	float: left;
+	height: 110px;
+	width: 113px;
+	border-radius: 60px;
+}
+
+header .logo:hover {	
+	background-image: url("../images/logo_active.png");
+	 transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -ms-transition: all.5s ease;
+}
+
+header nav {
+	float: right;
+	margin: 40px 20px 0px 0px;
+}
+
+header ul li {
+	list-style: none;
+	display: block;
+	float: left;
+	margin-left: 20px;
+}
+
+header ul li a{
+	display: block;
+	padding: 8px 15px;
+	color:#333;
+	text-align: center;
+	text-decoration: none;
+	background-image: linear-gradient(to bottom, #fff 0%, #d1d1d1 50%, #fff 100% );
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	font-family: "raleway-semibold", "arial";
+	font-size: 1em;
+	font-weight: bold;
+}
+
+header ul li a:hover{
+	color:#f5f5f5;
+	background-image: linear-gradient(to bottom, #ffc2a5 0%, 
+#fb874f 50%, #ffc2a5 100% );
+	 transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -ms-transition: all.5s ease;
+}
+
+/* Main CSS */
+
+.main {
+	width: 100%;
+	background: #fbfafa;	
+	padding: 40px 0;
+}
+
+.main ul li{
+	list-style: none;
+	display: block;
+	width: 300px;
+	float: left;
+	text-align: center;
+	margin-right: 48px;
+}
+
+.main ul li:last-child{  /*Для последнего элемента*/
+	margin-right: 0;
+	float: right;
+}
+
+.main ul li:nth-child(3n+0){
+	margin-right: 0;
+	float: right;
+}
+
+.main ul li h1 {
+	color: #fb874f;
+    font-family: "raleway-regular", arial;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.main ul li p {
+	color: #898d94;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    min-height: 200px;
+}
+
+.main ul li a {
+	width: 200px;
+	margin: 0 auto;
+	display: block;
+	padding: 8px 15px;
+	color:#333;
+	text-align: center;
+	text-decoration: none;
+	background-image: linear-gradient(to bottom, #fff 0%, #d1d1d1 50%, #fff 100% );
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	font-family: "raleway-semibold", "arial";
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+.main ul li a:hover {
+	color:#f5f5f5;
+	background-image: linear-gradient(to bottom, #ffc2a5 0%, 
+#fb874f 50%, #ffc2a5 100% );
+	 transition: all.5s ease;
+    -moz-transition: all.5s ease;
+    -webkit-transition: all.5s ease;
+    -ms-transition: all.5s ease;
+}
+
+ 
+/* Contacts */
+
+.contacts {
+	width: 100%;
+	height: 150px;
+	padding: 10px 0;
+} 
+
+.contacts h1 {
+	color:#fb874f;
+    font-family: "raleway-regular", arial;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.contacts .refs{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contacts .refs .icon {
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+	margin: 0 30px;
+	background: url("../images/sprit.jpg") 0px 0px;
+}
+
+.contacts .refs .icon a{
+	display: inline-block;
+	width: 63px;
+	height: 63px;
+}
+.contacts .refs .icon:hover{
+	background-position-y: 0px; 
+	transition: all.2s ease;
+    -moz-transition: all.2s ease;
+    -webkit-transition: all.2s ease;
+    -ms-transition: all.2s ease;
+
+}
+
+.contacts .refs .icon_facebook{
+	background-position: 0px -63px;
+}
+.contacts .refs .icon_twitter{
+	background-position: -63px -63px;
+}
+.contacts .refs .icon_LinkedIn{
+	background-position: -126px -63px;
+}
+.contacts .refs .icon_vk{
+	background-position: -189px -63px;
+}
+.contacts .refs .icon_odnoklas{
+	background-position: 126px -63px;
+}
+.contacts .refs .icon_youtube {
+	background-position: 63px -63px;
+}
+
+/* Footer */
+
+footer {
+    padding: 30px 0;
+    font-family: "raleway-regular", arial;
+    font-size: 14px;
+    letter-spacing: 1px;
+	background: #aaa;
+	color:#fdfcfc;
+}
+
+footer .signature {
+	 text-align: center;
+}
+footer a {
+	text-decoration: none;
+    font-family: "raleway-semibold", arial;
+    font-weight: bold;
+    color: #666464;
+    font-size: 1.2em;
+}
+
+footer ul {
+	display: block;
+	float: right;
+	text-align: right;
+}
+
+footer ul li{
+	list-style-type: none;
+	margin: 5px;
+}
