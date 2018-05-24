@@ -12,7 +12,7 @@
 			if(password_verify($data['password'], $user->password ))
 			{
 				//Логин пользователя
-				$_SESSION['logged_user'] = $user;
+				$_SESSION['logged_user'] = $user; //Разобрать сесии
 				header('Location: /');
 			}
 			else
