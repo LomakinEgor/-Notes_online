@@ -119,7 +119,7 @@ header ul li a:hover{
 	padding: 40px 0;
 }
 
-.main ul li{
+.main > ul > li{
 	background: rgb(39,74,100, 1);	
 	list-style: none;
 	display: block;
